@@ -1,6 +1,5 @@
 module github.com/martinguilhem/twittor
 
-go 1.13
+go 1.16
 
-require(
-)
+require go.mongodb.org/mongo-driver v1.7.0 // indirect
