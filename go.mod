@@ -3,6 +3,7 @@ module github.com/martinguilhem/twittor
 go 1.3
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/gorilla/mux v1.8.0
 	github.com/klauspost/compress v1.13.3 // indirect
