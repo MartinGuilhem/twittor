@@ -1,7 +1,6 @@
 package routers
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 	"os"
@@ -13,9 +12,6 @@ import (
 
 func SubirAvatar(w http.ResponseWriter, r *http.Request) {
 	file, handler, err := r.FormFile("avatar")
-	// fmt.Println(handler)
-	fmt.Println(file)
-	fmt.Println(err)
 	var extension = strings.Split(handler.Filename, ".")[1]
 	var archivo string = "uploads/avatars/" + IDUsuario + "." + extension
 
